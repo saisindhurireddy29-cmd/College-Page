@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website Design @P1 </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <section class="sub-header">
+      <nav>
+        <a href="index.html"><img src="images/logo.jpg"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="course.html">COURSE</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+    <h1>Our Courses</h1>  
+    </section>
+<!---Course--->
+<section class="course">
+        <h1>Courses We Offer</h1>
+        <p>It offers a wide range of undergraduate (B.Tech), postgraduate (M.Tech, MBA), and PhD programs across engineering, technology, and management disciplines.
+        The most popular courses include Computer Science & Engineering, Electronics & Communication Engineering, Artificial Intelligence, Data Science, Cyber Security, and MBA.</p>
+        <div class="row">
+            <div class="course-col">
+                <h3>Undergraduate(B.Tech) Program</h3>
+                <p>The College offers diverse undergraduate (B.Tech) courses designed to build strong foundations in engineering and technology. Popular 
+                streams include Computer Science & Engineering (CSE), Artificial Intelligence & Machine Learning, Data Science, Cyber Security, Electronics & 
+                Communication Engineering (ECE), Information Technology (IT), as well as core branches like Mechanical, Electrical, and Civil Engineering.</p>
+            </div>
+            <div class="course-col">
+                <h3>Postgraduate(M.Tech & MBA) Program</h3>
+                <p>It include specializations such as Computer Science & Engineering, Embedded Systems, Cyber Security, Power Electronics, and Structural Engineering, each spanning 2 years with admissions through GATE/TS PGECET.
+                College offers a comprehensive Master of Business Administration (MBA) program designed to develop leadership, strategic thinking, and managerial skills.</p>
+            </div>
+            <div class="course-col">
+                <h3>PhD program</h3>
+                <p>Research programs are offered in fields such as Computer Science & Engineering, Electronics & Communication Engineering, Electrical & Electronics Engineering, and Management Studies (MBA).</p>
+            </div>
+        </div>
+    </section>
+<!----facilities---->
+<section class="facilities">
+    <h1>Our facilities</h1>
+    <p>College provides modern facilities including hostels, library,
+    auditorium, canteen, laboratories, sports grounds, seminar halls,
+    transport, and Wi-Fi-enabled classrooms, ensuring both academic and student life needs are met.</p>
+    <div class="row">
+        <div class="facilities-col">
+            <img src="images/library.jpg">
+            <h3>Reading Space-Library</h3>
+            <p>Large collection of books, journals, and digital resources across engineering and management disciplines.</p>
+        </div>
+        <div class="facilities-col">
+            <img src="images/canteen.jpg">
+            <h3>Food area</h3>
+            <p>Hygienic food services available for students and staff.</p>
+        </div>
+        <div class="facilities-col">
+            <img src="images/about.jpg">
+            <h3>Laboratories</h3>
+            <p>Well-equipped labs for Electronics, IT/ICT, Mechanical, Civil, and Computer Science to foster practical skills.</p>
+        </div>
+    </div>
+</section>
+<!--Footer-->
+<section class="footer">
+    <h4>About Us</h4>
+    <p>CMR Engineering College – Where innovation meets excellence, shaping engineers and leaders for tomorrow."</p>
+    <div class="icons">
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-linkedin"></i>
+    </div>
+    <p>Made with <i class="far fa-heart"></i> by Sindhu Reddy</p>
+</section>
+<!-----JavaScript for Toggle Menu----->
+    <script>
+        var navLinks = documnet.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
